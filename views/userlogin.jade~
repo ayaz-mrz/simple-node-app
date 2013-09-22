@@ -1,0 +1,18 @@
+doctype 5
+html
+	head
+	    link(rel='stylesheet', href='/css/style.css')    
+	    script(src='/js/jquery-1.9.1.min.js')
+	    title Super Awesome Chatroom
+	body
+    	h1 Super Awesome Chatroom
+    
+		form#messageForm
+		span
+		  	Your name: input(type="text", value="", name="uname", placeholder="Your Name")#name br
+		  	select(name="room")
+		  		option(value="Intertainment")Intertainment
+		  		option(value="Educational")Educational
+		  		option(value="Programming")Programming
+			  		
+			  input(type="submit", value="Join")#send

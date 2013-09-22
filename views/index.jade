@@ -1,0 +1,23 @@
+doctype 5
+html
+  head
+    link(rel='stylesheet', href='/css/style.css')    
+    script(src='/socket.io/socket.io.js')    
+    script(src='/js/jquery-1.9.1.min.js')
+    script room = "#{room}";
+    script(src='/js/index.js')
+    title Super Awesome Chatroom
+  body
+    h1 Super Awesome Chatroom
+    div
+      div.inlineBlock
+        b Hi !{name} welcome to !{room} room
+        br
+        form#messageForm
+          textarea(rows="4", cols="50", placeholder="Share something!", maxlength=200)#outgoingMessage
+          input(type="button", value="Share", disabled=false)#send
+      div.inlineBlock.topAligned
+        b Participants
+        br
+        div#participants
+    div#messages
