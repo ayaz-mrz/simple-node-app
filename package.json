@@ -5,7 +5,7 @@
 	"dependencies" : {
 		"express" : "3.3.7",
 		"socket.io" : "0.9.16",
-		"mongoose" : "3.6.18",
+		"mongoose" : "5.8.9",
 		"underscore" : "1.5.1",
 		"jade" : "0.35.0",
 		"session.socket.io" : "latest",
